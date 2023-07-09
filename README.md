@@ -33,13 +33,13 @@ make build
 4. There are some default service configs setup in system, if need you can override them with yours (especially the db's configuration)
 
 ```
-export DB_HOST=localhost
+export DB_HOST=postgres12
 export DB_PORT=5432
 export DB_USER=postgres
 export DB_NAME=postgres
 export DB_PASSWORD=
 export HOST=http://locahost
-export PORT=8080
+export PORT=8000
 ```
 
 5. Start server (assume db is already running)

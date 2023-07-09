@@ -22,14 +22,14 @@ func LoadConfig(key string) string {
 
 // Default configurations for the NFT service
 var (
-	DefaultDBHost     = "localhost"
+	DefaultDBHost     = "postgres12"
 	DefaultDBPort     = 5432
 	DefaultDBUser     = "postgres"
 	DefaultDBName     = "postgres"
 	DefaultDBPassword = "nft2023"
 	DefaultHost       = "http://localhost"
-	DefaultPort       = "8080"
-	DefaultIPFSHost   = "localhost"
+	DefaultPort       = "8000"
+	DefaultIPFSHost   = "ipfs"
 	DefaultIPFSPort   = "5001"
 )
 

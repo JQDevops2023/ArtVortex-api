@@ -14,7 +14,7 @@ dropdb:
 	docker exec -it postgres12 dropdb artvortex
 
 postgres:
-	docker run --name postgres12 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=nft2023 -d postgres:12-alpine
+	docker run --name postgres12 --network my-network -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=nft2023 -d postgres:12-alpine
 run:
 	./${BINARY_NAME}
 
