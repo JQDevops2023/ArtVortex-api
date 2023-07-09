@@ -31,6 +31,8 @@ clean:
 	rm -f ${BINARY_NAME}
 dep:
 	go mod download
+test: 
+	go test -v -cover ./...
 
 lint:
 	golangci-lint run --enable-all
