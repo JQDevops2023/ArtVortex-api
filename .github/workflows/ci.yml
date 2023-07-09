@@ -19,7 +19,7 @@ jobs:
       postgres:
         image: postgres:12
         env:
-          POSTGRES_USER: root
+          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: nft2023
           POSTGRES_DB: postgres
         ports:
