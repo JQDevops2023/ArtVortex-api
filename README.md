@@ -33,10 +33,10 @@ make build
 4. There are some default service configs setup in system, if need you can override them with yours (especially the db's configuration)
 
 ```
-export DB_HOST=artvortex-api_postgres_1
+export DB_HOST=artvortex.cfega2vttnks.ap-southeast-2.rds.amazonaws.com
 export DB_PORT=5432
-export DB_USER=postgres
-export DB_NAME=postgres
+export DB_USER=root
+export DB_NAME=artvortex
 export DB_PASSWORD=
 export HOST=http://locahost
 export PORT=8000

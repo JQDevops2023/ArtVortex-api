@@ -13,22 +13,22 @@ import (
 // Config func to get env value from key ---
 func LoadConfig(key string) string {
 	// load .env file
-	err := godotenv.Load(".env")
+	err := godotenv.Load("example.env")
 	if err != nil {
-		fmt.Print("Error loading .env file")
+		fmt.Print("Error loading example.env file")
 	}
 	return os.Getenv(key)
 }
 
 // Default configurations for the NFT service
 var (
-	DefaultDBHost     = "artvortex-api_postgres_1"
-	DefaultDBPort     = 5432
-	DefaultDBUser     = "postgres"
-	DefaultDBName     = "postgres"
-	DefaultDBPassword = "nft2023"
-	DefaultHost       = "http://localhost"
-	DefaultPort       = "8000"
+	DefaultDBHost     = LoadConfig("DB_HOST")
+	DefaultDBPort     = LoadConfig("DB_PORT")
+	DefaultDBUser     = LoadConfig("DB_USER")
+	DefaultDBName     = LoadConfig("DB_NAME")
+	DefaultDBPassword = LoadConfig("DB_PASSWORD")
+	DefaultHost       = LoadConfig("HOST")
+	DefaultPort       = LoadConfig("PORT")
 	DefaultIPFSHost   = "ipfs"
 	DefaultIPFSPort   = "5001"
 )
