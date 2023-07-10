@@ -23,7 +23,7 @@ func LoadConfig(key string) string {
 // Default configurations for the NFT service
 var (
 	DefaultDBHost     = LoadConfig("DB_HOST")
-	DefaultDBPort     = LoadConfig("DB_PORT")
+	DefaultDBPort     = 5432
 	DefaultDBUser     = LoadConfig("DB_USER")
 	DefaultDBName     = LoadConfig("DB_NAME")
 	DefaultDBPassword = LoadConfig("DB_PASSWORD")
