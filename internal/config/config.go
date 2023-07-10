@@ -22,7 +22,7 @@ func LoadConfig(key string) string {
 
 // Default configurations for the NFT service
 var (
-	DefaultDBHost     = "postgres12"
+	DefaultDBHost     = "artvortex-api_postgres_1"
 	DefaultDBPort     = 5432
 	DefaultDBUser     = "postgres"
 	DefaultDBName     = "postgres"

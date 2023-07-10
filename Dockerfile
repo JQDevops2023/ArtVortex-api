@@ -9,10 +9,9 @@ FROM alpine:latest
 WORKDIR /app
 COPY --from=builder /app/server .
 COPY example.env .
+COPY wait-for.sh .
 ENV PORT=8080
 EXPOSE $PORT
 
-# 加载环境变量
-RUN apk add --no-cache bash
-CMD [ "bash", "-c", "source ./example.env && ./server" ]
+CMD ["/app/server"]
 
